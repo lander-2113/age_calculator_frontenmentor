@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+}
+
+.container {
+    font-family: 'Poppins-Bold', 'sans-serif';
+    /* height: 100vh; */
+    display: inline-block;
+    background-color:  #FFFFFF;
+    border-radius: 20px;
+    border-bottom-right-radius:120px;
+    position: absolute;
+    width: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+.container .output {
+    font-size: 32px;
+}
+
+
+/* grid */
+#age-form .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 40px 10px;
+    width: 310px;
+    column-gap: 20px;
+    /* row-gap: 3px; */
+    /* font-size: larger; */
+}
+/* error */
+#age-form .form-grid .e1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#age-form .form-grid .e2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#age-form .form-grid .e3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#age-form .form-grid .a1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#age-form .form-grid .a2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#age-form .form-grid .a3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#age-form .form-grid .b1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#age-form .form-grid .b2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#age-form .form-grid .b3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}/* grid ends */
+
+#age-form label{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#age-form div input {
+    /* all: unset; */
+    box-sizing: border-box;
+    width: 115px;
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    height: 44px;
+}
+
+#age-form {
+    position: relative;
+}
+
+#age-form div {
+    margin-bottom: 55px;
+}
+
+#age-form > input {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    /* scale: 1.2; */
+    border: none;
+    /* position: absolute; */
+    position: absolute;
+    top: 67%;
+    left: 87%;
+    /* top: -50%; */
+    /* z-index: 1; */
+    background-image: url("assets/images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #894BFF;
+    /* color: #894BFF; */
+    cursor: pointer;
+}
+#age-form > input:hover{
+    background-color: black;
+}
+.container .output {
+    margin-top: 40px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.container .output p span:first-child{
+    color: #894BFF;
+}
+#age-form .form-grid .a1,
+#age-form .form-grid .a2,
+#age-form .form-grid .a3{
+    /* margin-bottom: 10px; */
+}
+#age-form .form-grid .e1,
+#age-form .form-grid .e2,
+#age-form .form-grid .e3 {
+    margin-top: 10px;
+    font-size: 11px;
+    color: rgb(216, 88, 89, .74);
+    display: none;
+}
+/* #age-form .form-grid .b1,
+#age-form .form-grid .b2,
+#age-form .form-grid .b3 */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* input:nth-child() */
+
+@media (max-width: 375px) {
+    *{
+        /* overflow: hidden; */
+    }
+    .container {
+        width: 300px;
+
+        padding: 20px;
+        padding-top: 40px;
+        /* overflow: hidden; */
+    }
+    #age-form div {
+        
+    }
+    #age-form div input {
+        width: 70px;
+        font-size: 15px;
+        /* z-index: 5; */
+        
+    }
+
+    #age-form > input {
+         left: 43%;   
+    }
+    .container .output  {
+        font-size: 42px;
+    }
+
+    #age-form .form-grid .e1,
+    #age-form .form-grid .e2,
+    #age-form .form-grid .e3 {
+        font-size: 8px;
+    }
+}

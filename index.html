@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  
+</head>
+<body>
+  <div class="container">
+    <div class="input">
+      <form action="" id="age-form" onsubmit="return false;">
+        <div class="form-grid">
+
+          <label class="item a1" for="day">DAY</label>
+          <input class="item b1" id="day" type="number" placeholder="Day">
+          <p class="item e1">error</p>
+
+          <label class="item a2" for="month">MONTH</label>
+          <input class="item b2" id="month" type="number" placeholder="Month">
+          <p class="item e2">error</p>
+
+          <label class="item a3" for="year">YEAR</label>
+          <input class="item b3" id="year" type="number" placeholder="Year">
+          <p class="item e3">error</p>
+
+        </div>
+        <hr>
+        <input type="submit" value="">
+      </form>
+    </div>
+    <div class="output">
+      <p>
+        <span>--</span> <span><em>years</em></span>
+      </p>
+      <p>
+        <span>--</span> <span><em>months</em></span>
+      </p>
+      <p>
+        <span>--</span> <span><em>days</em></span>
+      </p>
+    </div>
+  </div>
+ 
+  <script src="./index.js" type="text/JavaScript">  
+  </script>
+  
+</body>
+</html>
